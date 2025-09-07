@@ -40,7 +40,7 @@ const SignIn = () => {
 
       {/* Right Side */}
       <div className="col-span-5 flex items-center justify-center ">
-        <div className="max-w-sm w-full bg-white rounded-3xl  shadow-md p-10">
+        <div className="max-w-md w-full bg-white rounded-3xl  shadow-md p-10">
           <h2 className="text-2xl font-medium mb-2">
             Sign in & Explore
           </h2>
