@@ -7,7 +7,7 @@ const Main = () => {
     <div className="relative">
       <Navbar />
 
-      <div className="min-h-[calc(100vh-361px)] sm:min-h-[calc(100vh-381px)] mt-[54px] sm:mt-[74px] bg-[#FBFEFA]">
+      <div className="min-h-[calc(100vh-371px)] sm:min-h-[calc(100vh-381px)] mt-[64px] sm:mt-[74px] bg-[#FBFEFA]">
         <Outlet />
       </div>
       <Footer />
