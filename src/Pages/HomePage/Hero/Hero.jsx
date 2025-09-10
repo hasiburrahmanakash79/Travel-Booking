@@ -4,11 +4,12 @@ import HotelBookingForm from "./HotelBookingForm";
 const Hero = () => {
   return (
     <section className="relative">
-      <div className="p-10 bg-white shadow-md rounded-xl mb-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-10">
+      <div className="p-5 sm:p-10 bg-white shadow-md rounded-xl mb-10">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-10"> */}
+        <div className="flex flex-col-reverse sm:flex-row  items-center justify-between gap-5 sm:gap-10">
           {/* Text Section */}
           <div className="mb-6 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-[28px] md:text-5xl font-bold mb-4">
               <span className="text-blue-700">Hotels</span> for Every{" "}
               <span className="text-[#7ED957]">Group</span> at the{" "}
               <span className="text-[#7ED957]">Best</span>{" "}
