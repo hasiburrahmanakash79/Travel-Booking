@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import logo from '../../assets/logo/logo.png';
+import { useState } from "react";
+import logo from "../../assets/logo/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,8 +7,8 @@ const Navbar = () => {
   const [activeItem, setActiveItem] = useState("Home"); // Default active item is Home
 
   return (
-    <nav className="bg-white p-4 shadow-md">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="bg-white p-4 shadow-md fixed top-0 left-0 w-full z-50">
+      <div className="container px-5 mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-8 mr-2" />
@@ -21,7 +21,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className={`hover:underline font-medium ${activeItem === "Home" ? "text-green-600" : ""}`}
+                  className={`hover:underline font-medium ${
+                    activeItem === "Home" ? "text-green-600" : ""
+                  }`}
                   onClick={() => setActiveItem("Home")}
                 >
                   Home
@@ -30,7 +32,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/hotel-request"
-                  className={`hover:underline font-medium ${activeItem === "Hotel Request" ? "text-green-600" : ""}`}
+                  className={`hover:underline font-medium ${
+                    activeItem === "Hotel Request" ? "text-green-600" : ""
+                  }`}
                   onClick={() => setActiveItem("Hotel Request")}
                 >
                   Hotel Request
@@ -39,7 +43,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/offers"
-                  className={`hover:underline font-medium ${activeItem === "Offers" ? "text-green-600" : ""}`}
+                  className={`hover:underline font-medium ${
+                    activeItem === "Offers" ? "text-green-600" : ""
+                  }`}
                   onClick={() => setActiveItem("Offers")}
                 >
                   Offers
@@ -48,7 +54,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/about-us"
-                  className={`hover:underline font-medium ${activeItem === "About Us" ? "text-green-600" : ""}`}
+                  className={`hover:underline font-medium ${
+                    activeItem === "About Us" ? "text-green-600" : ""
+                  }`}
                   onClick={() => setActiveItem("About Us")}
                 >
                   About Us
@@ -57,7 +65,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/faq"
-                  className={`hover:underline font-medium ${activeItem === "FAQ" ? "text-green-600" : ""}`}
+                  className={`hover:underline font-medium ${
+                    activeItem === "FAQ" ? "text-green-600" : ""
+                  }`}
                   onClick={() => setActiveItem("FAQ")}
                 >
                   FAQ
@@ -72,8 +82,19 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
               </svg>
             </button>
           </div>
@@ -97,8 +118,13 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`text-green-600 hover:underline font-medium ${activeItem === "Home" ? "text-green-600" : ""}`}
-                onClick={() => { setActiveItem("Home"); setIsOpen(false); }}
+                className={`text-green-600 hover:underline font-medium ${
+                  activeItem === "Home" ? "text-green-600" : ""
+                }`}
+                onClick={() => {
+                  setActiveItem("Home");
+                  setIsOpen(false);
+                }}
               >
                 Home
               </Link>
@@ -106,8 +132,13 @@ const Navbar = () => {
             <li>
               <Link
                 to="/hotel-request"
-                className={`hover:underline font-medium ${activeItem === "Hotel Request" ? "text-green-600" : ""}`}
-                onClick={() => { setActiveItem("Hotel Request"); setIsOpen(false); }}
+                className={`hover:underline font-medium ${
+                  activeItem === "Hotel Request" ? "text-green-600" : ""
+                }`}
+                onClick={() => {
+                  setActiveItem("Hotel Request");
+                  setIsOpen(false);
+                }}
               >
                 Hotel Request
               </Link>
@@ -115,8 +146,13 @@ const Navbar = () => {
             <li>
               <Link
                 to="/offers"
-                className={`hover:underline font-medium ${activeItem === "Offers" ? "text-green-600" : ""}`}
-                onClick={() => { setActiveItem("Offers"); setIsOpen(false); }}
+                className={`hover:underline font-medium ${
+                  activeItem === "Offers" ? "text-green-600" : ""
+                }`}
+                onClick={() => {
+                  setActiveItem("Offers");
+                  setIsOpen(false);
+                }}
               >
                 Offers
               </Link>
@@ -124,8 +160,13 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about-us"
-                className={`hover:underline font-medium ${activeItem === "About Us" ? "text-green-600" : ""}`}
-                onClick={() => { setActiveItem("About Us"); setIsOpen(false); }}
+                className={`hover:underline font-medium ${
+                  activeItem === "About Us" ? "text-green-600" : ""
+                }`}
+                onClick={() => {
+                  setActiveItem("About Us");
+                  setIsOpen(false);
+                }}
               >
                 About Us
               </Link>
@@ -133,8 +174,13 @@ const Navbar = () => {
             <li>
               <Link
                 to="/faq"
-                className={`hover:underline font-medium ${activeItem === "FAQ" ? "text-green-600" : ""}`}
-                onClick={() => { setActiveItem("FAQ"); setIsOpen(false); }}
+                className={`hover:underline font-medium ${
+                  activeItem === "FAQ" ? "text-green-600" : ""
+                }`}
+                onClick={() => {
+                  setActiveItem("FAQ");
+                  setIsOpen(false);
+                }}
               >
                 FAQ
               </Link>
