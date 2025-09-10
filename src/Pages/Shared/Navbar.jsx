@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="bg-white py-4 shadow-md fixed top-0 left-0 w-full z-50 ">
+      <nav className=" py-4 shadow-md fixed top-0 left-0 w-full z-50 bg-white">
         <div className="container px-5 mx-auto flex items-center justify-between relative">
           {/* Logo */}
           <div className="flex items-center">
@@ -88,7 +88,7 @@ const Navbar = () => {
           {/* Mobile Menu */}
           {isOpen && (
             <div className="md:hidden mt-2  absolute top-12 right-6 w-[60%]">
-              <ul className="text-right space-y-2 p-4 bg-green-100/30 backdrop-blur-3xl shadow-md rounded-lg">
+              <ul className="text-right space-y-2 p-4 bg-white/30 backdrop-blur-3xl shadow-md rounded-lg">
                 {navButtons?.map((item) => (
                   <li key={item?.id}>
                     <NavLink
