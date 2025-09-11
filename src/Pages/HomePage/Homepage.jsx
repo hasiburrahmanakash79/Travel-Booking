@@ -1,7 +1,8 @@
 // import React from 'react';
+import Achievements from "./Achievements/Achievements";
+import GroupBooking from "./GroupBooking/GroupBooking";
 import Hero from "./Hero/Hero";
 import PromotionSlider from "./Hero/PromotionSlider";
-import MostPopularHotels from "./MostPopularHotels.jsx/MostPopularHotels";
 
 const Homepage = () => {
   return (
@@ -10,7 +11,8 @@ const Homepage = () => {
         <Hero />
       </div>
       <PromotionSlider />
-      <MostPopularHotels />
+      <GroupBooking />
+      <Achievements />
     </div>
   );
 };
