@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Links and Buttons Wrapper */}
-          <div className="flex-1 flex items-center lg:justify-center justify-end">
+          <div className=" flex items-center lg:justify-center justify-end">
             <div className="hidden md:flex items-center space-x-6">
               <ul className="flex space-x-6">
                 {navButtons?.map((item) => (
@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
 
           {/* Login and Signup Buttons */}
-          <div className="space-x-4 hidden md:flex">
+          <div className=" space-x-4 hidden md:flex">
             <button className="bg-white text-gray-700 border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100 font-medium">
               Log in
             </button>
