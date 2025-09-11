@@ -59,15 +59,15 @@ const MostPopularHotels = () => {
       totalReviews: 32,
       facilities: ["City View", "Restaurant", "Bar"],
     },
-    {
-      id: "5",
-      image: "/Hotels/hotel.jpg",
-      location: "Downtown, Newyork",
-      hotel_name: "Lucky Star Hotel & Resort",
-      rating: 4.8,
-      totalReviews: 32,
-      facilities: ["City View", "Restaurant", "Bar"],
-    },
+    // {
+    //   id: "5",
+    //   image: "/Hotels/hotel.jpg",
+    //   location: "Downtown, Newyork",
+    //   hotel_name: "Lucky Star Hotel & Resort",
+    //   rating: 4.8,
+    //   totalReviews: 32,
+    //   facilities: ["City View", "Restaurant", "Bar"],
+    // },
   ];
   return (
     <div className="container mx-auto px-5">
@@ -108,7 +108,7 @@ const MostPopularHotels = () => {
               <figure>
                 <img src={card?.image} alt="Hotel Image" />
               </figure>
-              <div></div>
+              <div className="px-3 py-4"></div>
             </div>
           ))}
         </div>
