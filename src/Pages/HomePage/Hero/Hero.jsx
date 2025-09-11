@@ -4,7 +4,7 @@ import HotelBookingForm from "./HotelBookingForm";
 const Hero = () => {
   return (
     <section className="relative">
-      <div className="p-5 sm:p-10 bg-white shadow-md rounded-xl mb-10">
+      <div className="p-5 sm:p-10 bg-white shadow-sm rounded-xl mb-10">
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-10"> */}
         <div className="flex flex-col-reverse sm:flex-row  items-center justify-between gap-5 sm:gap-10">
           {/* Text Section */}
@@ -29,7 +29,7 @@ const Hero = () => {
             <img
               src={groupImage}
               alt="Group of friends"
-              className="rounded-lg shadow-md w-full h-auto"
+              className="rounded-lg  w-full h-auto"
             />
           </div>
         </div>
