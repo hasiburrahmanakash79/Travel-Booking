@@ -49,7 +49,7 @@ const Achievements = () => {
   }
 
   return (
-    <div className="bg-white my-28 ">
+    <div className=" my-28 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-10 py-10 space-y-10 ">
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl font-semibold text-center sm:text-left">
