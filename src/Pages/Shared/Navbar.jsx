@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "../../assets/logo/logo.png";
 import { NavLink } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -19,7 +18,7 @@ const Navbar = () => {
         <div className="container px-5 mx-auto flex items-center justify-between relative">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-8 mr-2" />
+            <img src="/logo/logo.png" alt="Logo" className="h-8 mr-2" />
           </div>
 
           {/* Navigation Links and Buttons Wrapper */}
