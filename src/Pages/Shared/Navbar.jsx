@@ -86,14 +86,14 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="md:hidden mt-2  absolute top-12 right-6 w-[60%]">
-              <ul className="text-right space-y-2 p-4 bg-white/30 backdrop-blur-3xl shadow-md rounded-lg">
+            <div className="md:hidden mt-2  absolute top-12 right-6 w-[55%]">
+              <ul className="text-left space-y-2 p-4 bg-white/30 backdrop-blur-3xl shadow-md rounded-lg">
                 {navButtons?.map((item) => (
-                  <li key={item?.id}>
+                  <li key={item?.id} className="shadow-sm rounded-lg py-1 pl-4">
                     <NavLink
                       to={item?.link}
                       className={({ isActive }) =>
-                        ` font-medium w-full ${
+                        ` font-medium  ${
                           isActive ? "text-green-600 " : "text-black"
                         }`
                       }
