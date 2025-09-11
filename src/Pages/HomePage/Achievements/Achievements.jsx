@@ -116,7 +116,7 @@ const Achievements = () => {
             onClick={() => setCurrentPage(isCurrentPage - 1)}
             className=""
           >
-            <img src="/public/Icons/left.png" alt="Left Icon" />
+            <img src="/Icons/left.png" alt="Left Icon" />
           </button>
           <button
             className={`text-[14px] ${
@@ -164,7 +164,7 @@ const Achievements = () => {
             onClick={() => setCurrentPage(isCurrentPage + 1)}
             className=""
           >
-            <img src="/public/Icons/right.png" alt="Right Icon" />
+            <img src="/Icons/right.png" alt="Right Icon" />
           </button>
         </div>
       </div>
