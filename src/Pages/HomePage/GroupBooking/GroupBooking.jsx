@@ -8,7 +8,7 @@ const GroupBooking = () => {
   };
 
   return (
-    <div className="w-full bg-[#DCF4D2]">
+    <div className="w-full bg-[#DCF4D2] mt-20">
       <div className="container mx-auto px-5 py-12 md:py-16 lg:py-20 xl:py-24 flex flex-col lg:flex-row justify-between items-center gap-8 text-[#1A1A1A]">
         {/* Heading & Button */}
         <div className="flex-1 text-center lg:text-left">
