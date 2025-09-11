@@ -1,8 +1,7 @@
 import { useState } from "react";
-import logo from "../../assets/logo/logo.png";
-import {  Instagram, Send, Twitter, } from "lucide-react";
-import {  RiFacebookCircleLine } from "react-icons/ri";
-import { PiPinterestLogo} from "react-icons/pi";
+import { Instagram, Send, Twitter } from "lucide-react";
+import { RiFacebookCircleLine } from "react-icons/ri";
+import { PiPinterestLogo } from "react-icons/pi";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -20,16 +19,33 @@ const Footer = () => {
         {/* Logo and Tagline */}
         <div className="mb-6 md:mb-0">
           <div className="w-10 mb-3">
-            <img src={logo} alt="Logo" />
+            <img src="/logo/logo.png" alt="Logo" />
           </div>
           <p className="text-sm max-w-xs">
-            We aim to provide modern explorers with innovative, functional and comfortable stays around the world
+            We aim to provide modern explorers with innovative, functional and
+            comfortable stays around the world
           </p>
           <div className="flex space-x-4 mt-3">
-            <a href="#"><span className="text-white text-2xl"><RiFacebookCircleLine/></span></a>
-            <a href="#"><span className="text-white text-2xl"><PiPinterestLogo/></span></a>
-            <a href="#"><span className="text-white"><Twitter/></span></a>
-            <a href="#"><span className="text-white"><Instagram/></span></a>
+            <a href="#">
+              <span className="text-white text-2xl">
+                <RiFacebookCircleLine />
+              </span>
+            </a>
+            <a href="#">
+              <span className="text-white text-2xl">
+                <PiPinterestLogo />
+              </span>
+            </a>
+            <a href="#">
+              <span className="text-white">
+                <Twitter />
+              </span>
+            </a>
+            <a href="#">
+              <span className="text-white">
+                <Instagram />
+              </span>
+            </a>
           </div>
         </div>
 
@@ -37,10 +53,26 @@ const Footer = () => {
         <div className="mb-6 md:mb-0">
           <h3 className="font-semibold mb-4">Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="text-white hover:underline">FAQs</a></li>
-            <li><a href="#" className="text-white hover:underline">Contact Us</a></li>
-            <li><a href="#" className="text-white hover:underline">About Us</a></li>
-            <li><a href="#" className="text-white hover:underline">Guest review</a></li>
+            <li>
+              <a href="#" className="text-white hover:underline">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-white hover:underline">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-white hover:underline">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-white hover:underline">
+                Guest review
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -48,9 +80,25 @@ const Footer = () => {
         <div className="mb-6 md:mb-0">
           <h3 className="font-semibold mb-4">Contact Info</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="tel:(000) 000-0000" className="text-white hover:underline">(000) 000-0000</a></li>
-            <li><a href="mailto:example@gmail.com" className="text-white hover:underline">example@gmail.com</a></li>
-            <li className="text-white">24 Royal Lane, Mesa, New Jersey 45435</li>
+            <li>
+              <a
+                href="tel:(000) 000-0000"
+                className="text-white hover:underline"
+              >
+                (000) 000-0000
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:example@gmail.com"
+                className="text-white hover:underline"
+              >
+                example@gmail.com
+              </a>
+            </li>
+            <li className="text-white">
+              24 Royal Lane, Mesa, New Jersey 45435
+            </li>
           </ul>
         </div>
 
@@ -74,8 +122,12 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="text-center text-xs text-gray-400 mt-10">
-        © 2023 StayFinder. All rights reserved.
+      <div className="container mx-auto px-5 flex justify-evenly items-center text-center text-xs text-gray-400 mt-12">
+        <p className="">© 2023 StayFinder. All rights reserved.</p>
+        <p className="">
+          <span className="underline cursor-pointer">Terms & Conditions</span>{" "}
+          and <span className="underline cursor-pointer">Privacy & Policy</span>
+        </p>
       </div>
     </footer>
   );
